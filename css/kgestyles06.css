@@ -1,0 +1,90 @@
+/*Annelise Trout 4/17/2019*/
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+* {margin: 0; padding: 0;}
+
+.mobile {display: inline;}
+.tablet {display: none;}
+.desktop {display: none;}
+
+.logoimg {margin-left: auto; margin-right: auto; display: block; width: 30%;}
+
+.centertext {text-align: center;}
+
+.floatleft {float: left;}
+
+.sitetitle {font-family: 'Marck Script', cursive, calibri, serif; font-size: 5em; text-align: center; color: #FFFFFF; margin-bottom: 0.5em;}
+
+body {font-family: verdana, calibri, sans-serif; background-color: #E5112A;}
+
+header {width: 100%; padding: 2%;}
+
+nav {text-align: center; margin-bottom: 2%;}
+
+nav ul li {display: block; background-color: #000000; margin: 0.25em 3em; padding: 0.25em;}
+
+nav ul li a{text-decoration: none; color: #FFFFFF;}
+
+#main {background-color: #FFFFFF; padding: 2% 3% 5% 3%; overflow: auto;}
+#main a {color: #E5112A; border-bottom: 1px dotted #E5112A; text-decoration: none;}
+
+#outerwrapper {width: 95%; margin: 0 auto;}
+
+footer {color: #FFFFFF; text-align: center; margin-top: 2em;}
+
+a:link {color: #FFFFFF;}
+a:visited {color: #FFFFFF;}
+
+dt {font-weight: bold; margin-top: 0.5em;}
+
+dl dd {font-style: italic; margin-left: 2em;}
+
+h1 {font-family: 'Marck Script', cursive, calibri, serif; font-size: 2.5em; text-align: center; margin: 1em 0; color: #E5112A;}
+
+h2, h3, dt{margin-bottom: 0.5em; margin-top: 1em;}
+
+p {margin-bottom: 1em;}
+
+ul {list-style-type: none;}
+
+.tooltip {position: relative; display: inline-block;}
+.tooltip .tooltiptext {visibility: hidden; position: absolute; z-index: 2;}
+
+.indentedbulletlist li {list-style-type: square; list-style-position: outside; margin-left: 5%;}
+
+figure img {max-width: 100px; display: block; margin: 0 auto;}
+figure a {border: none !important;}
+
+/*BEGIN TABLET MEDIA QUERY*/
+@media only screen and (min-width: 500px){
+	.tablet {display: inline;}
+	
+	nav ul {margin: 0 auto; background-color: #000000; padding: 1em 0; width: 90%;}
+	nav ul li {display: inline-block; white-space: nowrap; margin: 0;}
+	
+	#outerwrapper {margin-left: auto; margin-right: auto; width: 90%;}
+	
+	article {margin: auto;}
+	section {float: left; width: 45%; margin: 2%; z-index: 1;}
+	
+	figure {text-align: center;}
+	figure img {width: 16%; margin: 0.5%; display: inline; max-width: 200px;}
+}
+/*END TABLET MEDIA QUERY*/
+
+/*BEGIN DESKTOP MEDIA QUERY*/
+@media only screen and (min-width: 800px){
+	.desktop {display: inline;}
+	nav ul{width: 100%;}
+	#outerwrapper {width: 80%;}
+	
+	.tooltip {border-bottom: 1px dotted #E5112A;}
+	.tooltip .tooltiptext {background-color: #000000; color: #FFFFFF; text-align: center; padding: 5px; top: -5px; left: 100%; font-size: 0.7em; opacity: 0.7;}
+	.tooltip .tooltiptext:after {right: 100%;top: 50%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute; pointer-events: none;border-color: rgba(0, 0, 0, 0);	border-right-color: #000000;border-width: 12.5px;	margin-top: -12.5px;}
+	.tooltip:hover .tooltiptext {visibility: visible;}
+	.tooltip:hover .tooltiptext a:hover {font-style: italic;}
+	.tooltip .tooltiptext a {text-decoration: none; border-bottom: 1px dotted #FFFFFF; font-style: normal; color: #FFFFFF !important;}
+	
+	figure img:hover {opacity: 0.7;}
+	figure img:active {border: 1px dotted #E5112A;}
+}
+/*END DESKTOP MEDIA QUERY*/
