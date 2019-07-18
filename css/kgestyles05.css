@@ -86,6 +86,5 @@ figure a {border: none !important;}
 	.tooltip .tooltiptext a {text-decoration: none; border-bottom: 1px dotted #FFFFFF; font-style: normal; color: #FFFFFF !important;}
 	
 	figure img:hover {opacity: 0.7;}
-	figure img:active {border: 1px dotted #E5112A;}
 }
 /*END DESKTOP MEDIA QUERY*/
